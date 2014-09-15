@@ -1,0 +1,61 @@
+{
+
+   "name": "Trials",
+   "children": [
+    {
+     "name": "Cardiovascular_Trials",
+     "children": [
+      {"name": "ERICA", "size": 5000,   "color": "#25b7c0", "url":  "/erica"},
+      {"name": "EARNEST", "size": 3400, "color": "#25b7c0", "url":  "/earnest"},
+      {"name": "HYPAZ", "size": 2000, "color": "#25b7c0", "url":   "#self"},
+      {"name": "EVOLUTION", "size": 2000, "color": "#35b7c0", "url": "#self"}
+
+     ]
+    },
+    {
+     "name": "Cancer Trials",
+     "children": [
+      {"name": "18F PET", "size": 2000, "color": "#806d6a", "url":   "#self"},
+      {"name": "MELRESIST", "size": 3600, "color": "#806d6a", "url":   "#self"},
+      {"name": "NEOSUN", "size": 2000, "color": "#806d6a", "url":   "#self"},
+      {"name": "SIEGE", "size": 2000, "color": "#806d6a", "url": "#self"},
+      {"name": "LEO", "size": 2000, "color": "#806d6a", "url": "#self"}
+
+
+     ]
+    }, {
+     "name": "Surgery Trials",
+     "children": [
+      {"name": "RESCUE ASDH", "size": 5200, "color": "#85bf49", "url":   "/rescue-asdh"}
+     ]
+    }, 
+    {
+     "name": "Paeds",
+     "children": [
+            {"name": "AdDIT", "size": 4600, "color": "#3aa35e", "url": "http://www.addit-trial.org/"},
+            {"name": "DETEMIR CLARGINE", "size": 4600, "color": "#3aa35e", "url": "#self"}
+
+     ]
+    }, 
+     {
+     "name": "Vasculitis",
+     "children": [
+      {"name": "RITAZAREM", "size": 2000, "color": "#7494e6", "url":   "http://www.rarediseasesnetwork.org/vcrc/ritazarem/"} 
+
+     ]
+    }, 
+{
+     "name": "Other Trials",
+     "children": [
+      {"name": "ALEVIATE", "size": 2000, "color": "#e5625f", "url": "#self"},
+      {"name": "DILT1D", "size": 2000, "color": "#e5625f", "url": "http://www.clinical-trials-type1-diabetes.com/home/"}, 
+      {"name": "IIVOP", "size": 2000, "color": "#e5625f", "url": "#self"}
+      
+     ]
+    }
+
+    ]}
+    
+
+ 
+ 
