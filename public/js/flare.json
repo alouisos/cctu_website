@@ -33,6 +33,7 @@
      "name": "Paeds",
      "children": [
             {"name": "AdDIT", "size": 4600, "color": "#3aa35e", "url": "http://www.addit-trial.org/"},
+            {"name": "REACT", "size": 2000, "color": "#3aa35e", "url": "http://paediatrics.medschl.cam.ac.uk/research/clinical-trials/real-time-continuous-glucose-monitoring-newborn-react/"},            
             {"name": "DETEMIR CLARGINE", "size": 4600, "color": "#3aa35e", "url": "#self"}
 
      ]

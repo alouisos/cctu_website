@@ -67,6 +67,12 @@
 		cursor:pointer;
 
 }
+.ch-img-9 { 
+	background-image: url(../images/REACT-logo.jpg);
+		cursor:pointer;
+
+}
+
 .ch-info {
 	position: absolute;
 	width: 100%;
