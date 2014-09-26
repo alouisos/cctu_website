@@ -15,3 +15,10 @@ exports.index2 = function(req, res) {
     navbar: 'navbar2'
   });
 };
+
+exports.index3 = function(req, res) {
+  res.render('home3.jade', {
+    title: 'Home',
+    navbar: 'navbar2'
+  });
+};

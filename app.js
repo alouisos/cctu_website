@@ -125,6 +125,12 @@ app.get('/loggedin-rescueasdh', passportConf.isAuthenticated, homeController.ind
 app.get('/login-rescueasdh', userController.getLogin_rescue);
 app.post('/login-rescueasdh', userController.postLogin_rescue);
 
+
+app.get('/login-dilfreq', userController.getLogin_dilfreq);
+app.get('/loggedin-dilfreq', passportConf.isAuthenticated, homeController.index3);
+app.post('/login-dilfreq', userController.postLogin_dilfreq);
+
+
 app.get('/login-earnest', userController.getLogin);
 app.post('/login-earnest', userController.postLogin);
 app.get('/logout', userController.logout);
@@ -158,6 +164,11 @@ app.get('/services', function(req,res) {
   
   app.get('/rescue-asdh-IE', function(req, res) { 
     res.render('rescue-asdh-IE.ejs')
+
+  }); 
+
+app.get('/dilt-freq', function(req, res) { 
+    res.render('diltfreq.ejs')
 
   }); 
 
