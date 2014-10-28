@@ -5,7 +5,7 @@
     {
      "name": "Cardiovascular_Trials",
      "children": [
-      {"name": "ERICA", "size": 5000,   "color": "#25b7c0", "url":  "/erica"},
+      {"name": "ERICA", "size": 3000,   "color": "#25b7c0", "url":  "/erica"},
       {"name": "EARNEST", "size": 3400, "color": "#25b7c0", "url":  "/earnest"},
       {"name": "HYPAZ", "size": 2000, "color": "#25b7c0", "url":   "#self"},
       {"name": "EVOLUTION", "size": 2000, "color": "#35b7c0", "url": "#self"}
