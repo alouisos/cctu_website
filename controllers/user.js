@@ -32,6 +32,14 @@ exports.getLogin_dilfreq = function(req, res) {
   });
 };
 
+exports.getLogin_react = function(req, res) {
+  if (req.user) return res.redirect('/loggedin-react');
+  res.render('account/login-react', {
+    title: 'Login'
+  });
+};
+
+
 /**
  * POST /login
  * Sign in using email and password.
@@ -110,6 +118,31 @@ exports.postLogin_dilfreq = function(req, res, next) {
       if (err) return next(err);
       req.flash('success', { msg: 'Success! You are logged in.' });
       res.redirect('/loggedin-dilfreq');
+    });
+  })(req, res, next);
+};
+
+exports.postLogin_react = function(req, res, next) {
+  req.assert('email', 'Email is not valid').isEmail();
+  req.assert('password', 'Password cannot be blank').notEmpty();
+
+  var errors = req.validationErrors();
+
+  if (errors) {
+    req.flash('errors', errors);
+    return res.redirect('/login-react');
+  }
+
+  passport.authenticate('local', function(err, user, info) {
+    if (err) return next(err);
+    if (!user) {
+      req.flash('errors', { msg: info.message });
+      return res.redirect('/login-react');
+    }
+    req.logIn(user, function(err) {
+      if (err) return next(err);
+      req.flash('success', { msg: 'Success! You are logged in.' });
+      res.redirect('/loggedin-react');
     });
   })(req, res, next);
 };

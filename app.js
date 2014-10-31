@@ -131,6 +131,12 @@ app.get('/loggedin-dilfreq', passportConf.isAuthenticated, homeController.index3
 app.post('/login-dilfreq', userController.postLogin_dilfreq);
 
 
+app.get('/login-react', userController.getLogin_react);
+app.get('/loggedin-react', passportConf.isAuthenticated, homeController.index4);
+app.post('/login-react', userController.postLogin_react);
+
+
+
 app.get('/login-earnest', userController.getLogin);
 app.post('/login-earnest', userController.postLogin);
 app.get('/logout', userController.logout);
@@ -171,6 +177,12 @@ app.get('/dilt-freq', function(req, res) {
     res.render('diltfreq.ejs')
 
   }); 
+
+app.get('/react', function(req, res) { 
+    res.render('react.ejs')
+
+  }); 
+
 
 
   app.get('/CCTU-portfolio', function(req, res) { 
